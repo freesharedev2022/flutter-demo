@@ -9,11 +9,15 @@ install lib:
 flutter pub get
 ```
 
+Login with account
+
+email/password = janet.weaver@reqres.in/12345678
+
+
 Image Screenshot
 
+![screenshot1](./Screenshot/ScreenShot1.png)
 
-![screenshot1](./Screenshot/Screenshot1.png)
+![screenshot2](./Screenshot/ScreenShot2.png)
 
-![screenshot2](./Screenshot/Screenshot2.png)
-
-![screenshot3](./Screenshot/Screenshot3.png)
+![screenshot3](./Screenshot/ScreenShot3.png)
