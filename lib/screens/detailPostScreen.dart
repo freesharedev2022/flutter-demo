@@ -4,6 +4,7 @@ import 'package:helloworld/api/api_list.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
+import 'package:helloworld/components/reusbaleRow.dart';
 
 class DetailPostScreen extends StatefulWidget {
   final Article detail;
@@ -64,13 +65,19 @@ class _DetailPostScreen extends State<DetailPostScreen> {
                 detail.thumbnail.toString(),
                 fit: BoxFit.cover
             ),
-            Text('${detail.description}'),
-            Text('Price: ${detail.price}'),
-            Text('DiscountPercentage: ${detail.discountPercentage}'),
-            Text('Rating: ${detail.rating}'),
-            Text('Stock: ${detail.stock}'),
-            Text('Brand: ${detail.brand}'),
-            Text('Category: ${detail.category}'),
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+                child: Text(
+                    '${detail.description}',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                )
+            ),
+            ReusbaleRow(title: 'Price', value: detail.price.toString() + " dolar"),
+            ReusbaleRow(title: 'DiscountPercentage', value: detail.discountPercentage.toString() + ' %'),
+            ReusbaleRow(title: 'Rating', value: detail.rating.toString() + ' star'),
+            ReusbaleRow(title: 'Stock', value: detail.stock.toString()),
+            ReusbaleRow(title: 'Brand', value: detail.brand.toString()),
+            ReusbaleRow(title: 'Category', value: detail.category.toString())
           ],
         ),
       ),

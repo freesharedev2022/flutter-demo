@@ -6,11 +6,11 @@ helloworld
 
 install lib:
 ```
-flutter pub add http
+flutter pub get
 ```
-```
+
 Image Screenshot
-```
+
 
 ![screenshot1](./Screenshot/Screenshot1.png)
 
