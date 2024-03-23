@@ -111,7 +111,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                   login(emailController.text.toString(), passwordController.text.toString());
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.yellow,
+                  textStyle: const TextStyle(color: Colors.yellow)
                 ),
                 child: const Text('LOGIN'),
               )
@@ -133,7 +133,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                   logout();
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.yellow,
+                  textStyle: const TextStyle(color: Colors.yellow)
                 ),
                 child: const Text('LOGOUT'),
               )
